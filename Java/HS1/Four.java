@@ -11,7 +11,7 @@ public class className {
         System.out.print("Number of Feet: ");
         int ft = sc.nextInt();
 
-        System.out.print("Number of Feet: ");
+        System.out.print("Number of : ");
         int ft = sc.nextInt();
 
         if(ch=1) {
