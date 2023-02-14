@@ -6,9 +6,6 @@ public class Two {
     public static void main(String[] args)
     {
         
-        Dictionary ht = new Hashtable();
-
-        
         Scanner sc = new Scanner(System.in);
 
         System.out.print("No of Pupils: ");
@@ -23,7 +20,7 @@ public class Two {
         Arrays.sort(cls);
         for (int i=0;i<size;i++) {
             int count = 1;
-            ht.put(i,count);
+            for(int j=i+1;j<size;j++)
             /* for(int j=i+1;j<size;j++) {
                 if(cls[i]==cls[j])
                 count+=1;
