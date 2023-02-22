@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.*;
 
-public class Two {
+public class Three {
     public static void main(String[] args)
     {
         
@@ -13,6 +13,7 @@ public class Two {
 
         float[] cls = new float[size];
 
+
         for (int i=0;i<size;i++) {
             cls[i] = sc.nextFloat();
         }
@@ -20,13 +21,16 @@ public class Two {
         Arrays.sort(cls);
         for (int i=0;i<size;i++) {
             int count = 1;
-            for(int j=i+1;j<size;j++)
-            /* for(int j=i+1;j<size;j++) {
-                if(cls[i]==cls[j])
+            for(int j=i+1;j<size;j++) {
+                if(cls[i]==cls[j]) {
                 count+=1;
+                i = i+1; }
+                else
+                    break;
+
             }
-            System.out.println(cls[i]+ "\t" + count); */
+            
+            System.out.println(cls[i]+ "\t" + count);
         }
-        System.out.println(ht[]);
     }
 }
