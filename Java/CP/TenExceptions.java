@@ -1,4 +1,10 @@
+import java.io.*;
 public class TenExceptions {
+
+    public static void display() {
+        System.out.println("Dummy Function");
+    }
+
     public static void main(String[] args) {
         try {
             /* int divide = 5/0;
@@ -6,7 +12,8 @@ public class TenExceptions {
             a[6] = 10; */
 
             String a = null;
-            System.out.println(a.length());
+            //System.out.println(a.length());
+            display(a);
         }
 
         catch(ArithmeticException e) {
@@ -23,8 +30,13 @@ public class TenExceptions {
         }
 
         catch(IllegalArgumentException e) {
-            System.out.println("");
+            System.out.println("Invalid Arguments given for the function");
         }
+
+        catch (IOException e) {
+            System.out.println("Invalid Input. Enter new value: ");
+        }
+
 
     }
 }
