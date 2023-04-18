@@ -1,0 +1,1 @@
+“Hi, In this exercise, you will learn how to use FileInputStream class which is InputStream type and FileOutputStream class which is OutputStream type to read from and write to a file. “
