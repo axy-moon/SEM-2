@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class CarMileage {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException  {
 		Scanner sc = new Scanner(System.in);
 
 		DataOutputStream out = new DataOutputStream(new FileOutputStream("Mileage"));
@@ -23,14 +23,20 @@ public class CarMileage {
 		int finOdo = sc.nextInt();
 
 
-		out.writeLine(name);
+		out.writeChars(name);
 		out.writeChar('\t');
 		out.writeDouble(ppg);
 		out.writeChar('\t');
 		out.writeDouble(pf);
 		out.writeInt(inOdo);
 
-
+		out.close();
 	}
+
+	DataInputStream in = new DataInputStream(new FileInputStream("Mileage"));
+
+	String name;
+	
+
 
 }
