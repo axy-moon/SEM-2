@@ -36,7 +36,6 @@ public class CarMileage {
 	DataInputStream in = new DataInputStream(new FileInputStream("Mileage"));
 
 	String name;
-	
-
-
+	double ppg;
+	double pf;
 }
