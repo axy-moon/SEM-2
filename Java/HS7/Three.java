@@ -54,9 +54,14 @@ class employee {
 public class Three {
     public static void main(String[] args) {
         employee e1 = new employee(1,"Axy","Moon",15000);
+        employee e2 = new employee(2,"Suresh", "Koothi",2000);
         
         System.out.println("Raised Salary: " + e1.raiseSalary(5));
+        System.out.println("Raised Salary: " + e2.raiseSalary(5));
+
         System.out.println(e1.toString());
+        System.out.println(e2.toString());
+
 
     }
 }
